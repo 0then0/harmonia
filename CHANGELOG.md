@@ -14,6 +14,10 @@ User-visible changes are recorded here. Changes under **Unreleased** are availab
 - PostgreSQL migrations, Redis background jobs, Docker Compose deployment and CI for CPython 3.10–3.15.
 - User, provider, API, operations and contributor guides, security and conduct policies, issue/PR templates and shared editor/Git settings.
 
+### Fixed
+
+- Updated pytest to the patched 9.x series and pytest-asyncio to a compatible 1.x release, resolving the development dependency conflict that blocked the [pytest temporary-directory security fix](https://github.com/advisories/GHSA-6w46-j5rx-g56g). Python 3.10–3.15 remain supported.
+
 ### Limitations
 
 - The hosted application supports one trusted operator; provider credentials are configured on the server without automatic token refresh.
