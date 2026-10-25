@@ -2,6 +2,8 @@
 
 Bug fixes, clearer documentation, matching regressions and provider improvements are welcome. For public API changes, new dependencies or destructive migrations, open an issue to agree on scope before implementation.
 
+Participation follows the [code of conduct](CODE_OF_CONDUCT.md). Report suspected vulnerabilities through the [security policy](SECURITY.md), not a public bug report.
+
 ## Development setup
 
 Clone the repository and install the locked development environment:
@@ -20,6 +22,8 @@ UV_PROJECT_ENVIRONMENT=../harmonia-venv-310 uv run pytest -m 'not integration'
 ```
 
 [Testing](docs/testing.md) covers integration services, migrations and the CI matrix. [Architecture](architecture.md) explains package boundaries; read [adding a provider](docs/provider-development.md) before implementing an adapter.
+
+Editors should honor [`.editorconfig`](.editorconfig): UTF-8, LF, a final newline, two-space indentation for configuration/web files and four spaces for Python. Ruff formats Python with a 100-character line length. [`.gitattributes`](.gitattributes) keeps text line endings consistent across platforms. Keep `uv.lock`, public configuration examples and canonical test fixtures tracked; `.gitignore` excludes local credentials and generated output.
 
 ## Making a change
 
@@ -58,4 +62,4 @@ Inspect generated operations, consider existing data and document downgrade limi
 
 Explain the problem, the resulting behaviour and how it was verified. Include relevant limitations, especially when external account access was not tested. Update user documentation when commands, configuration or behaviour change.
 
-Use English Conventional Commit messages with `feat`, `fix`, `refactor`, `chore`, `docs` or `test`. Follow the [pull request template](.github/pull_request_template.md). Open a [bug report](https://github.com/0then0/Harmonia/issues/new/choose) with a minimal reproduction, or use the provider request template to propose service support.
+Use English Conventional Commit messages with `feat`, `fix`, `refactor`, `chore`, `docs` or `test`. Follow the [pull request template](.github/PULL_REQUEST_TEMPLATE.md). Add user-visible changes to the **Unreleased** section of [CHANGELOG.md](CHANGELOG.md). Open a [bug report](https://github.com/0then0/Harmonia/issues/new/choose) with a minimal reproduction, or use the provider request template to propose service support.

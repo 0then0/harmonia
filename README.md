@@ -66,6 +66,11 @@ The default deployment binds the API to `127.0.0.1:8000`; PostgreSQL and Redis a
 - [Architecture](architecture.md): models, package boundaries and algorithm behaviour.
 - [Testing](docs/testing.md): local checks, disposable integration services and CI coverage.
 - [Contributing](CONTRIBUTING.md) and [adding a provider](docs/provider-development.md): development setup and extension contracts.
+- [Changelog](CHANGELOG.md): user-visible changes and current release status.
+
+## Community and security
+
+Follow the [code of conduct](CODE_OF_CONDUCT.md) when participating in project spaces. Use the [issue templates](https://github.com/0then0/Harmonia/issues/new/choose) for bugs, feature requests and provider proposals. For suspected vulnerabilities, follow the [security policy](SECURITY.md) and keep technical details private.
 
 ## License and attribution
 

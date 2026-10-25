@@ -1,0 +1,22 @@
+name: Feature request
+description: Propose a change to a supported workflow.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: Explain what you are trying to do and where the current workflow falls short.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the result you need, including relevant CLI, API or UI behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and constraints
+      description: Include workarounds or compatibility requirements. Do not include credentials or personal library data.

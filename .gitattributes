@@ -1,0 +1,6 @@
+# Keep text checkouts consistent on Linux, macOS and Windows.
+* text=auto eol=lf
+
+# Use Python-aware diff context; SVGs remain reviewable source assets.
+*.py diff=python
+*.svg text
