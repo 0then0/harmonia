@@ -39,7 +39,7 @@ jobs:
       HARMONIA_TEST_REDIS_URL: redis://localhost:6379/0
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python }}
       - name: Install pinned uv
